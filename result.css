@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    font-size: 16px; /* Base font size */
+    background-color: #f9f9f9; 
+    color: #333; 
+    line-height: 1.6; 
+}
+
+/* Header Styles */
+h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem; /* Increased size for header */
+    color: #ff6f61; /* Vibrant coral color for header */
+    margin-bottom: 20px;
+    text-align: center; /* Center the header text */
+    animation: fadeIn 0.5s ease; /* Header animation */
+}
+
+/* Text Styles */
+h4 {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.75rem; /* Increased size for h4 */
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Text color transition */
+}
+
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem; /* Set paragraph font size */
+    margin: 5px 0;
+}
+
+/* Additional Styles */
+.section-header {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5rem; /* Increased section header size */
+    margin: 20px 0;
+    text-align: left;
+    color: #ff6f61; /* Vibrant section header color */
+}
+
+/* Card Styles */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add shadow on hover */
+}
+
+.card-body {
+    background-color: #ffffff; 
+    padding: 20px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 10px; /* Rounded buttons */
+    background-color: #ff6f61; /* Vibrant coral */
+    color: #fff;
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Add transition for button hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Button shadow */
+}
+
+.btn:hover {
+    background-color: #e55a50; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Input Field Styles */
+input.form-control {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px; /* Rounded input fields */
+    padding: 10px;
+    transition: border-color 0.3s; /* Transition for border color */
+    font-size: 1rem; /* Set input font size */
+}
+
+input.form-control:focus {
+    border-color: #ff6f61; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5); /* Add shadow on focus */
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s; /* Transition for alert background */
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.8rem; 
+    }
+
+    h4 {
+        font-size: 1.3rem; /* Adjusted h4 size for mobile */
+    }
+
+    p {
+        font-size: 0.9rem; /* Smaller text on mobile */
+    }
+
+    .card {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .btn {
+        width: 100%; /* Full-width buttons on smaller screens */
+        margin-top: 10px; /* Space between buttons */
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #6c757d; 
+}
+
+footer a {
+    color: #ff6f61; /* Vibrant color for footer links */
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+/* E-Signature Image Styles */
+img {
+    border-radius: 10px;
+    border: 2px solid #ff6f61; /* Thicker border for emphasis */
+    margin-top: 10px;
+    max-width: 50%; /* Limit image width to 50% of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image if needed */
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+}
+
+/* Additional Styles for Specific Image Sizes */
+.small-image {
+    max-width: 100px; /* Fixed size for small images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.large-image {
+    max-width: 200px; /* Fixed size for large images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Loading Spinner (if needed) */
+.loading-spinner {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.show-spinner {
+    display: block; /* Show spinner when needed */
+}
+
+/* Custom Tooltip Styles */
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the tooltip */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

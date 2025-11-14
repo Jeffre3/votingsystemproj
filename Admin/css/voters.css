@@ -1,0 +1,201 @@
+/* Import Google Font */
+
+/* General styles */
+body {
+    background: linear-gradient(120deg, #ffe600, #ffcc00);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* Base font size */
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Ensures the image covers the entire page */
+
+    background-color: #f8f9fa;
+    
+}
+
+/* Header styles */
+h2 {
+    font-size: 2.5rem; /* Larger, bold heading */
+    font-weight: 700;
+    color: #444;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    background-color: #ffc107; /* Brighten hover color */
+    color: #000;
+}
+
+/* Back button */
+a.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+a.btn-primary:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    overflow: hidden;
+}
+
+.card-header {
+    background: #f7f7f7;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background: #ffe600;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+table tr:hover {
+    background: #fff3cd;
+    transition: background 0.3s ease;
+}
+
+/* Animations */
+
+/* Fade-in for content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container, .card, .table {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Modal animations */
+@keyframes modalZoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-content {
+    animation: modalZoomIn 0.4s ease;
+    border-radius: 10px;
+}
+
+/* Footer (optional) */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffe600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Scroll animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.content-wrapper {
+    animation: slideIn 0.6s ease-in-out;
+}
+
+.card {
+    border-radius: 15px;
+  }
+  .btn-floating {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  .btn-floating i {
+    font-size: 24px;
+  }
+  .table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+  }
